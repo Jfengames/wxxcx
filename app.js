@@ -1,4 +1,5 @@
 //app.js
+var m =0
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -33,7 +34,23 @@ App({
       }
     })
   },
+
+  
+  
+  
+  onHide: function () {
+    m +=1,
+    this.globalData.i = m,
+    
+    wx.redirectTo({
+      url: '../index/index',
+    })
+  },
+  
   globalData: {
-    userInfo: null
+    userInfo: null,
+    i :m
   }
+
+  
 })

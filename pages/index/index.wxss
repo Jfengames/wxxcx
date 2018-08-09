@@ -48,3 +48,9 @@
 .navigator-hover {
   color: blue;
 }
+.none{
+  display: none
+}
+.block{
+  display: block
+}

@@ -18,11 +18,12 @@
       <view class="list {{subItem.class}}" data-option="{{[subItem,index,idx]}}" bindtap="tapCheckbox">
         <view class="number">
         <radio></radio>
-         </view>{{subItem.label}}. {{subItem.text}}
-      </view>
+         </view>
+           {{subItem.label}}. {{subItem.text}}
+        </view>
     </block>
   </view>
-  <view class="btn" bindtap="tapConfirm">确定</view>
+  <view class="btn" bindtap="tapConfirm" >确定</view>
 </template>
 
 <!-- 题目选择模层 -->

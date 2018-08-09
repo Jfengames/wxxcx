@@ -12,6 +12,10 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-    <navigator class="navigator" url="/pages/python/python" hover-class="navigator-hover">{{enter}}</navigator>
+    <navigator data-num="1" class="navigator  {{_num==1?'none':''}} {{_num==2?'none':''}} {{_num==3?'none':''}} {{_num==4?'none':''}} {{_num==5?'block':''}}" bindtap="menuClick1" url="/pages/python/python" hover-class="navigator-hover">{{enter}}</navigator>
+    <navigator data-num="2" class="navigator none {{_num==1?'block':''}} {{_num==2?'none':''}} {{_num==3?'none':''}} {{_num==4?'none':''}} {{_num==5?'none':''}}" bindtap="menuClick2"  url="/pages/python2/python" hover-class="navigator-hover">{{enter}}</navigator>
+    <navigator data-num="3" class="navigator none  {{_num==1?'none':''}} {{_num==2?'block':''}} {{_num==3?'none':''}} {{_num==4?'none':''}} {{_num==5?'none':''}}" bindtap="menuClick3"  url="/pages/python3/python" hover-class="navigator-hover">{{enter}}</navigator>
+    <navigator data-num="4" class="navigator none  {{_num==1?'none':''}} {{_num==2?'none':''}} {{_num==3?'block':''}} {{_num==4?'none':''}} {{_num==5?'none':''}}" bindtap="menuClick4"  url="/pages/python4/python" hover-class="navigator-hover">{{enter}}</navigator>
+    <navigator data-num="5" class="navigator none  {{_num==1?'none':''}} {{_num==2?'none':''}} {{_num==3?'none':''}} {{_num==4?'block':''}} {{_num==5?'none':''}}" bindtap="menuClick5"  url="/pages/python5/python" hover-class="navigator-hover">{{enter}}</navigator>
   </view>
 </view>

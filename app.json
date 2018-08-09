@@ -2,7 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/python/python"
+    "pages/python/python",
+    "pages/python2/python",
+    "pages/python3/python",
+    "pages/python4/python",
+    "pages/python5/python"
   ],
   "window": {
     "navigationBarBackgroundColor": "#4d82e6",

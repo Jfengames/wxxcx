@@ -1,5 +1,5 @@
 // pages/python/python.js
-const questionData = require('../../utils/data.js')
+const questionData = require('../../utils/data2.js')
 
 //获取应用实例
 const app = getApp()
@@ -39,7 +39,7 @@ Page({
   //单选逻辑
   tapRadio: function (e) {
     let thisOption = e.currentTarget.dataset.option
- 
+
     let list = this.data.answers.allList[thisOption[2]].options.map(function (option, i) {
       if (thisOption[1] == i && option.class != 'active') {
         option.Select = true

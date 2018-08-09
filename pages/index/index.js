@@ -1,8 +1,10 @@
+
 //index.js
 //获取应用实例
 const app = getApp()
 
 Page({
+
   data: {
     motto: '',
     enter: '开始答题',
@@ -17,6 +19,7 @@ Page({
     })
   },
   onLoad: function () {
+    
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -38,7 +41,8 @@ Page({
           app.globalData.userInfo = res.userInfo
           this.setData({
             userInfo: res.userInfo,
-            hasUserInfo: true
+            hasUserInfo: true,
+            
           })
         }
       })
@@ -51,5 +55,60 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onPullDownRefresh: function () {
+    var i = 0;
+    wx.showNavigationBarLoading() //在标题栏中显示加载
+    //模拟加载
+    setTimeout(function () {
+      // complete
+
+      wx.navigateTo({
+        url: '/pages/python2/python',
+        success: function (res) {
+
+        },
+        fail: function (res) { },
+        complete: function (res) { },
+      })
+      wx.hideNavigationBarLoading() //完成停止加载
+      wx.stopPullDownRefresh() //停止下拉刷新
+    }, 1500);
+  },
+  menuClick1: function (e) {
+
+    this.setData({
+      _num: e.target.dataset.num
+    })
+  },
+
+  menuClick2: function (e) {
+
+    this.setData({
+      _num: e.target.dataset.num
+    })
+  },
+  menuClick3: function (e) {
+
+    this.setData({
+      _num: e.target.dataset.num
+    })
+  },
+  menuClick4: function (e) {
+
+    this.setData({
+      _num: e.target.dataset.num
+    })
+  },
+  menuClick5: function (e) {
+
+    this.setData({
+      _num: e.target.dataset.num
+    })
+  },
+    onShareAppMessage: function () {
+
   }
 })
+
+

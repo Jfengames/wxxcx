@@ -1,5 +1,5 @@
 // pages/python/python.js
-const questionData = require('../../utils/data.js')
+const questionData = require('../../utils/data3.js')
 
 //获取应用实例
 const app = getApp()
